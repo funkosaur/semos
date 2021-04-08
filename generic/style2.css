@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 40% 30% 20%;
+    grid-template-areas: 
+    "navbar navbar"
+    "first first"
+    "mountain photo"
+    "footer footer";
+    
+    
+}
+
+.hedr {
+    background-color: #5385c1;
+    grid-area: navbar;
+}
+
+.navbar {
+    margin-left: 225px;
+    margin-right: 225px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftsemos {
+    color: white;
+    
+
+}
+li a {
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.navul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    
+}
+
+button {
+    border: none;
+    color: white;
+    background-color: #5385c1;
+    height: 35px;
+    width: 70px;
+}
+
+.titleintro {
+grid-area: first;
+margin-left: 225px;
+margin-right: 225px;
+}
+
+.seconddesc {
+grid-area: first;
+
+}
+
+.firstdesc {
+grid-area: first;
+
+}
+
+.mountain2 {
+    grid-area: mountain;
+    margin-left: 225px;
+    padding-right: 25px;
+
+}
+
+.photo2 {
+    grid-area: photo;
+margin-right: 225px;
+padding-left: 25px;
+}
+
+.social {
+    height: 20px;
+    width: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #5a5a5a;
+    line-height: 25px;
+}
+
+h1 {
+    color: #5385c1;
+}
+
+img {
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    grid-area: footer;
+   margin-left: 225px;
+   margin-right: 225px;
+    align-items: center;
+    border-top: 1px outset #9a9a9a;
+    margin-top: 60px;
+    
+    
+}
+
+.botlist {
+    list-style-type: none;
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+@media (max-width: 1000px) {
+    
+    .navbar {
+        margin: 0px;
+        
+    }
+    .titleintro {
+        margin: 0px;
+    }
+    .photo2 {
+        margin: 0px;
+    }
+    .mountain2 {
+        margin: 0px;
+    }
+    .footer {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}

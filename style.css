@@ -1,0 +1,309 @@
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    background-image: url("images/space.jpg");
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+.navbar {
+    display: grid;
+    margin-left: 225px;
+    margin-right: 225px;
+    grid-template-columns: minmax(50px, 350px) minmax(50px, 770px) minmax(50px, 350px);
+    grid-template-rows: minmax(50px, 100px) minmax(50px, 400px);
+    grid-template-areas: 
+    "leftsemos . navul"
+    ". intro .";
+
+}
+
+.leftsemos{
+    grid-area: leftsemos;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    
+}
+.navul {
+    grid-area: navul;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    list-style-type: none;
+    
+}
+li {
+    font-weight: 50;
+
+}
+
+li a {
+    text-decoration: none;
+    
+    padding: 10px 10px;
+    color: white;
+
+}
+.intro {
+    grid-area: intro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    color: white;  
+}
+
+.sometext {
+    margin-left: 225px;
+    margin-right: 225px;
+    display:grid;
+    grid-template-columns: minmax(50px,490px) minmax(50px,490px) minmax(50px,490px);
+    grid-template-rows: 350px;
+    grid-template-areas:
+    "lorem1 lorem2 lorem3";
+    
+}
+
+#lorem1 {
+    grid-area: lorem1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-right: 200px;
+    padding-top: 10px;
+    line-height: 22px;
+    border-right: groove 1px #cccccc;
+}
+
+#lorem2 {
+    grid-area: lorem2;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-right: 150px;
+    padding-left: 50px;
+    padding-top: 10px;
+    line-height: 22px;
+    border-right: groove 1px #cccccc;
+    
+}
+
+#lorem3 {
+    grid-area: lorem3;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-right: 150px;
+    padding-left: 50px;
+    padding-top: 10px;
+    line-height: 22px;
+}
+
+.iconpart {
+    
+    background-color: #5385c1;
+}
+
+.icons {
+    margin-left: 225px;
+    margin-right: 225px;
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax(50px, 363px));
+    grid-template-rows: 150px 400px;
+    grid-template-areas: 
+    ". tit tit ."
+    "icon1 icon2 icon3 icon4";
+    grid-gap: 40px;
+    grid-auto-flow: column;
+}
+
+.titleicons {
+    grid-area: tit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    
+}
+
+.icon1 {
+    grid-area: icon1;
+    margin-bottom: 50px;
+    margin-right: 70px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid #afafaf;
+}
+
+.icon2 {
+    grid-area: icon2;
+    margin-bottom: 50px;
+    margin-left: 35px;
+    margin-right: 35px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid #afafaf;
+}
+
+.icon3 {
+    grid-area: icon3;
+    margin-bottom: 50px;
+    margin-left: 35px;
+    margin-right: 35px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid #afafaf;
+}
+
+.icon4 {
+    grid-area: icon4;
+    margin-bottom: 50px;
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid #afafaf;
+}
+
+p {
+    color: #9a9a9a;
+}
+
+h1 {
+    color: white;
+}
+
+.desc {
+    margin-left: 225px;
+    margin-right: 225px;
+    display: grid;
+    grid-template-columns: minmax(50px, 735px) minmax(50px, 735px);
+    grid-template-rows: 200px 400px;
+    grid-template-areas: 
+    "nunc nunc"
+    "mountain photo";
+    
+}
+
+.nunc {
+    grid-area: nunc;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    margin-bottom: 20px;
+    
+}
+
+.mountain {
+    grid-area: mountain;
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+
+.photo {
+    grid-area: photo;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+button {
+    border: none;
+    color: white;
+    background-color: #5385c1;
+    height: 35px;
+    width: 70px;
+}
+
+.footer {
+
+    margin-left: 225px;
+    margin-right: 225px;
+    display: grid;
+    grid-template-columns: minmax(50px,490px) minmax(50px,490px) minmax(50px,490px);
+    grid-template-rows: 150px;
+    grid-template-areas: 
+    "leftlink . rightlink";
+    border-top: 1px solid #9a9a9a;
+    margin-top: 60px;
+}
+
+.leftlink {
+    grid-area: leftlink;
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.rightlink {
+    grid-area: rightlink;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.botlist {
+    display: flex;
+    list-style-type: none;
+    
+}
+
+
+.social {
+    height: 20px;
+    width: 20px;
+}
+
+@media (max-width: 750px) {
+    .navbar {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 808px;
+        grid-template-columns: minmax(60px, 700px);
+        grid-template-rows: 50px 100px 200px;
+      grid-template-areas:
+        "leftsemos"
+        "navul"
+        "intro";
+        
+        align-items: center;
+    }
+    .leftsemos {
+        justify-content: center;
+
+    }
+    .navul {
+        justify-content: center;
+    }
+    .intro {
+        justify-content: center;
+        text-align: center;
+    }
+    .sometext {
+        margin-left: 0px;
+        margin-right: 0px;
+        grid-template-areas:
+     "lorem1"
+     "lorem2" 
+     "lorem3";
+     grid-template-rows: 200px 200px 200px;
+     width: 100%;
+     margin: 0 auto;
+        
+        max-width: 808px;
+    }
+    .lorem1 {
+        padding: 0px;
+    }
+  }
